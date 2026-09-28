@@ -1,4 +1,11 @@
-const factorial = function() {
+const factorial = function(n) {
+    if(!Number.isInteger(n) || n < 0){
+        return;
+    }
+    if(n == 0) return 1;
+    else{
+        return n * factorial(n - 1);
+    }
 
 };
 
